@@ -1,20 +1,17 @@
 const fs = require("fs");
 const express = require("express");
 const morgan = require("morgan");
-
+const db = require("./database");
 ///Routes
-
+const productsRouter = require("./routes/productRoutes");
 const app = express();
 
 //Middlewares
 app.use(express.json());
-
-///Mounting the routes
-app.get("/", (req, res) => {
-  res.status(200).json({
-    status: "Running",
-    message: "Home Page",
-  });
+app.use((req, res, next) => {
+  req.requestTime = new Date().toISOString();
+  next();
 });
-
+///Mounting the routes
+app.use("/api/v1/product", productsRouter);
 module.exports = app;
