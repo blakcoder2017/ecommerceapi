@@ -19,3 +19,7 @@ Post a product
 ```
 /api/v1/product
 ```
+
+
+#Credit
+The database schema was developed by <a href="https://github.com/abdelatifsd" target="_blank">Abdellatif</a>
