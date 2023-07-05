@@ -1,0 +1,25 @@
+{
+  "name": "ecommerceapi",
+  "version": "1.0.0",
+  "description": "Backend for an ecommerce website",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/blakcoder2017/ecommerceapi.git"
+  },
+  "author": "BlakCoder2017",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/blakcoder2017/ecommerceapi/issues"
+  },
+  "homepage": "https://github.com/blakcoder2017/ecommerceapi#readme",
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "morgan": "^1.10.0",
+    "mysql": "^2.18.1"
+  }
+}
